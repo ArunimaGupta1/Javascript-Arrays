@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Array Demo</title>
+    </head>
+    <body>
+        <script language="Javascript" type="text/javascript">
+        // 1. By using array literal
+        // var arrayName = [val1,val2,val3......]
+        var colors = ['red','green','blue','black']
+
+        for(var i=0;i<colors.length;i++)
+        {
+            document.write(colors[i]);
+            document.write("<br>")
+        }
+
+        //2. Creating instance of array object
+        var cities = new Array()
+        cities[0] = "Delhi"
+        cities[1] = "Mumbai"
+        cities[2] = "Kolkata"
+        cities[3] = "Bangalore"
+        
+       cities.forEach(city => {
+           document.write(city+"<br>") 
+        });
+
+
+        //3. By using array constructor
+        var fruits = new Array('apple','mango','banana')
+        fruits.forEach(fruit =>{document.write(fruit.toUpperCase()+"<br>")})
+
+        //pop and push
+        document.write(fruits.pop());
+        fruits.push("Guava")
+        fruits.forEach(fruit =>{document.write(fruit.toUpperCase()+"<br>")})
+        </script>
+    </body>
+</html>

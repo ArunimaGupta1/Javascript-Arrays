@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Spread Operator Demo</title>
+    </head>
+    <body>
+        <script language="Javascript" type="text/javascript">
+          function addNumbers(a,b){
+              return a+b
+          }
+
+          function addNums(...numbers){
+              for(var i=0;i<numbers.length;i++)
+              {
+                  result+=numbers[i]
+              }
+              document.write(result)
+          }
+          
+          addNums(10,20,-6)
+          document.write(addNumbers(10,20))
+
+        </script>
+    </body>
+</html>
